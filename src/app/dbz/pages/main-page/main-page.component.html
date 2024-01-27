@@ -1,0 +1,15 @@
+<h1>DBZ main-page works!</h1>
+
+<div class="row">
+    <div class="col">
+        <h4>Listado de personajes</h4>
+        <dbz-character-list
+            [characterList]="characters"
+            (onDelete)="onDeleteCharacter($event)"></dbz-character-list>
+    </div>
+    <div class="col">
+        <h4>Agregar Personaje</h4>
+        <dbz-add-character
+            (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+    </div>
+</div>

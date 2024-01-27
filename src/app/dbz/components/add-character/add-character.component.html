@@ -1,0 +1,29 @@
+<form class="row">
+    <div class="form-group mb-2 text">
+        <label for="exampleInputEmail1">Nombre</label>
+        <input
+            [(ngModel)]="character.name"
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            name="name" />
+    </div>
+    <div class="form-group mb-2 text">
+        <label for="exampleInputPassword1">Poder</label>
+        <input
+            [(ngModel)]="character.power"
+            type="number"
+            class="form-control"
+            placeholder="Poder"
+            name="power" />
+    </div>
+    <button
+        (click)="emitCharacter()"
+        type="submit"
+        class="btn btn-primary">
+        Agregar
+    </button>
+
+    <pre>
+    </pre>
+</form>
